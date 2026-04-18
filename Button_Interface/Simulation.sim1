@@ -10,12 +10,24 @@
 
 <item itemtype="Voltage Source" CircId="Voltage Source-23" mainComp="false" ShowProp="MaxValue" Show_id="false" Show_Val="true" Pos="660,468" rotation="0" hflip="1" vflip="1" label="Voltage Source-23" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Running="true" Value_Volt="5 V" MaxValue="5 V" />
 
+<item itemtype="Resistor" CircId="Resistor-26" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="776,524" rotation="90" hflip="1" vflip="1" label="Resistor-26" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Ground" CircId="Ground-30" mainComp="false" Show_id="false" Show_Val="false" Pos="776,572" rotation="0" hflip="1" vflip="1" label="Ground-30" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-28" mainComp="false" Pos="776,484" />
+
 <item itemtype="Connector" uid="Connector-20" startpinid="Ground-19-Gnd" endpinid="Led-2-rPin" pointList="720,444,740,444" />
 
-<item itemtype="Connector" uid="Connector-22" startpinid="Push-8-switch0pinN" endpinid="mega328-1-PORTD5" pointList="764,484,796,484" />
+<item itemtype="Connector" uid="Connector-22" startpinid="Push-8-switch0pinN" endpinid="Node-28-0" pointList="764,484,776,484" />
 
 <item itemtype="Connector" uid="Connector-24" startpinid="Led-2-lPin" endpinid="mega328-1-PORTD4" pointList="772,444,796,444" />
 
 <item itemtype="Connector" uid="Connector-25" startpinid="Voltage Source-23-outPin" endpinid="Push-8-pinP0" pointList="688,484,732,484" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Resistor-26-lPin" endpinid="Node-28-1" pointList="776,508,776,484" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Node-28-2" endpinid="mega328-1-PORTD5" pointList="776,484,796,484" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Resistor-26-rPin" endpinid="Ground-30-Gnd" pointList="776,540,776,556" />
 
 </circuit>
